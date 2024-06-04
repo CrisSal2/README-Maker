@@ -2,6 +2,8 @@
 
 const inquirer = require("inquirer");
 const fs = require("fs");
+const { generate } = require("rxjs");
+const { log, error } = require("console");
 
 // TODO: Create an array of questions for user input
 const questions = [title, description, features, usage, email, github];
@@ -43,6 +45,12 @@ function writeToFile(fileName, data) {
         },
         
     ])
+    .then((data) => {
+        const readme = generateREADME(data);
+        fs.writeFile('README.md', (readme), (err) => {
+            err ? console.error(err) : console.log('README file created!');
+        })
+    })
 }
 
 // TODO: Create a function to initialize app
