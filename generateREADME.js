@@ -1,4 +1,4 @@
-const generateREADME = ({title, description, features, usage, github, email, license}) =>
+const generate = ({title, description, features, usage, github, email}) =>
     `
     ##${title}
     
@@ -159,4 +159,8 @@ const generateREADME = ({title, description, features, usage, github, email, lic
         this CC0 or use of the Work.
     
     
-    `
+    `;
+
+    module.exports = {
+        generate,
+      };

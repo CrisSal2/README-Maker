@@ -2,14 +2,14 @@
 
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateREADME = require('./generateREADME');
 const { generate } = require("rxjs");
 const { log, error } = require("console");
 
 // TODO: Create an array of questions for user input
-const questions = [title, description, features, usage, email, github];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile() {
 
     inquirer
     .prompt ([
@@ -45,8 +45,8 @@ function writeToFile(fileName, data) {
         },
         
     ])
-    .then((data) => {
-        const readme = generateREADME(data);
+    .then((response) => {
+        const readme = generate(response);
         fs.writeFile('README.md', (readme), (err) => {
             err ? console.error(err) : console.log('README file created!');
         })
@@ -54,7 +54,9 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    writeToFile();
+}
 
 // Function call to initialize app
 init();
