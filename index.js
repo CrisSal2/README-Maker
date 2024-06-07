@@ -47,7 +47,7 @@ function writeToFile() {
     ])
     .then((response) => {
         const readme = generate(response);
-        fs.writeFile('README.md', (readme), (err) => {
+        fs.writeFile('README2.md', (readme), (err) => {
             err ? console.error(err) : console.log('README file created!');
         })
     })
