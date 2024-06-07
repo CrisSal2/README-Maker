@@ -10,9 +10,8 @@ const { log, error } = require("console");
 
 // TODO: Create a function to write README file
 function writeToFile() {
-
     inquirer
-    .prompt ([
+        .prompt([
         {
             type: 'input',
             message: 'What is the title of your project?',
@@ -45,11 +44,12 @@ function writeToFile() {
         },
         
     ])
-    .then((response) => {
-        const readme = generate(response);
-        fs.writeFile('README.md', (readme), (err) => {
-            err ? console.error(err) : console.log('README file created!');
-        })
+    .then(
+        (answers) => {
+        const readme = generateREADME.generate(answers);
+        fs.writeFile('README2.md', (readme), (err) => 
+            err ? console.error(err) : console.log('README file created!')
+        );
     });
 };
 

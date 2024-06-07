@@ -15,7 +15,7 @@ const generate = ({title, description, features, usage, github, email}) =>
     
     ## Installation
     
-    -
+    - 
     
     ## Features
     
@@ -161,6 +161,6 @@ const generate = ({title, description, features, usage, github, email}) =>
     
     `;
 
-    module.exports = {
+module.exports = {
         generate,
       };
