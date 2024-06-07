@@ -1,9 +1,8 @@
-const generate = ({title, description, features, usage, github, email}) =>
-    `## ${title}
+## asdf
     
 ## Description
     
-    - ${description}
+    - asdfas
     
 ## Table of Contents
     
@@ -18,19 +17,19 @@ const generate = ({title, description, features, usage, github, email}) =>
     
 ## Features
     
-    - ${features}
+    - dfasdf
 
 
 ## Usage
     
-    - ${usage}
+    - asdfasdf
     
     
 ### Contact
     
-    - https://github.com/${github}
+    - https://github.com/asdfasd
     
-    - ${email}
+    - asdfasdf
 
     
 ## Lisence
@@ -158,8 +157,4 @@ const generate = ({title, description, features, usage, github, email}) =>
         this CC0 or use of the Work.
     
     
-    `;
-
-module.exports = {
-        generate,
-      };
+    
