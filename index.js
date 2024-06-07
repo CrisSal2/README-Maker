@@ -15,32 +15,32 @@ function writeToFile() {
     .prompt ([
         {
             type: 'input',
-            messege: 'What is the title of your project?',
+            message: 'What is the title of your project?',
             name: 'title',
         },
         {
             type: 'input',
-            messege: 'Give a description of your project:',
+            message: 'Give a description of your project:',
             name: 'description',
         },
         {
             type: 'input',
-            messege: 'What are some of the features of your project?',
+            message: 'What are some of the features of your project?',
             name: 'features',
         },
         {
             type: 'input',
-            messege: 'What are some of the usages of your project?',
+            message: 'What are some of the usages of your project?',
             name: 'usage',
         },
         {
             type: 'input',
-            messege: 'What email can people use to contact you?',
+            message: 'What email can people use to contact you?',
             name: 'email',
         },
         {
             type: 'input',
-            messege: 'What is github username?',
+            message: 'What is github username?',
             name: 'github',
         },
         
@@ -50,8 +50,8 @@ function writeToFile() {
         fs.writeFile('README.md', (readme), (err) => {
             err ? console.error(err) : console.log('README file created!');
         })
-    })
-}
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {
