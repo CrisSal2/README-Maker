@@ -1,4 +1,4 @@
-/************************************************* File to be created using index.js prompt ****************************************/
+/************************************************* README File to be created using index.js prompt ****************************************/
 
 
 const generate = ({title, description, features, usage, github, email}) =>
