@@ -1,4 +1,5 @@
-// TODO: Include packages needed for this application
+/*************************************** Packages needed for this application ************************/
+
 
 const inquirer = require("inquirer");
 const fs = require("fs");
@@ -6,9 +7,10 @@ const generateREADME = require('./generateREADME');
 const { generate } = require("rxjs");
 const { log, error } = require("console");
 
-// TODO: Create an array of questions for user input
 
-// TODO: Create a function to write README file
+/***************************************** User Input Function ****************************************/
+
+
 function writeToFile() {
     inquirer
         .prompt([
@@ -53,7 +55,10 @@ function writeToFile() {
     });
 };
 
-// TODO: Create a function to initialize app
+
+/*************************************************** Initializes app ******************************************/
+
+
 function init() {
     writeToFile();
 }

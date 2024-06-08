@@ -1,3 +1,6 @@
+/************************************************* File to be created using index.js prompt ****************************************/
+
+
 const generate = ({title, description, features, usage, github, email}) =>
     `## ${title}
     
@@ -158,7 +161,11 @@ const generate = ({title, description, features, usage, github, email}) =>
         this CC0 or use of the Work.
     
     
-    `;
+`;
+
+
+/************************************** Exports Function to be used in index.js ******************************/
+
 
 module.exports = {
         generate,
