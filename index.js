@@ -3,7 +3,7 @@
 
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateREADME = require('./generateREADME');
+const generateREADME = require('./utils/generateREADME');
 const { generate } = require("rxjs");
 const { log, error } = require("console");
 
