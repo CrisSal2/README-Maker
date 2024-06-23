@@ -8,6 +8,19 @@ const { generate } = require("rxjs");
 const { log, error } = require("console");
 
 
+/***************************************** Questions array for prompt **********************************/
+
+const questions = [
+    'What is the title of your project?',
+    'Give a description of your project:',
+    'How do you install your project?',
+    'What are some of the features of your project?',
+    'What are some of the usages of your project?',
+    'What email can people use to contact you?',
+    'What is github username?'
+];
+
+
 /***************************************** User Input Function ****************************************/
 
 
@@ -16,37 +29,37 @@ function writeToFile() {
         .prompt([
         {
             type: 'input',
-            message: 'What is the title of your project?',
+            message: questions[0],
             name: 'title',
         },
         {
             type: 'input',
-            message: 'Give a description of your project:',
+            message: questions[1],
             name: 'description',
         },
         {
             type: 'input',
-            message: 'How do you install your project?',
+            message: questions[2],
             name: 'Installation',
         },
         {
             type: 'input',
-            message: 'What are some of the features of your project?',
+            message: questions[3],
             name: 'features',
         },
         {
             type: 'input',
-            message: 'What are some of the usages of your project?',
+            message: questions[4],
             name: 'usage',
         },
         {
             type: 'input',
-            message: 'What email can people use to contact you?',
+            message: questions[5],
             name: 'email',
         },
         {
             type: 'input',
-            message: 'What is github username?',
+            message: questions[6],
             name: 'github',
         },
         
