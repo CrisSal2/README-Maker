@@ -1,7 +1,7 @@
 /************************************************* README File to be created using index.js prompt ****************************************/
 
 
-const generate = ({title, description, features, usage, github, email}) =>
+const generate = ({title, description, Installation, features, usage, github, email}) =>
     `## ${title}
     
 ## Description
@@ -17,7 +17,7 @@ const generate = ({title, description, features, usage, github, email}) =>
     
 ## Installation
     
-    - 
+    - ${Installation}
     
 ## Features
     

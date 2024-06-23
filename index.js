@@ -26,6 +26,11 @@ function writeToFile() {
         },
         {
             type: 'input',
+            message: 'How do you install your project?',
+            name: 'Installation',
+        },
+        {
+            type: 'input',
             message: 'What are some of the features of your project?',
             name: 'features',
         },
@@ -64,4 +69,5 @@ function init() {
 }
 
 // Function call to initialize app
+
 init();
