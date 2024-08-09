@@ -55,8 +55,11 @@ function renderLicenseSection(license) {
 /************************************************* README File to be created using index.js prompt ****************************************/
 
 
-const generateMarkdown = ({title, description, installation, features, usage, github, email, license}) =>
+const generateMarkdown = ({title, description, installation, features, usage, contribution, tests, github, email, license}) =>
   `## ${title}
+
+  # License
+  ${renderLicenseBadge(license)}
   
 ## Description
   
@@ -67,8 +70,9 @@ const generateMarkdown = ({title, description, installation, features, usage, gi
   - [Installation](#installation)
   - [Features](#features)
   - [Usage](#usage)
-  - [Contact](#Contact)
-  - [License] ${renderLicenseBadge(license)}
+  - [Contribution](#contribution)
+  - [Tests](#tests)
+  - [Questions](#questions)
   
 ## Installation
   
@@ -84,7 +88,17 @@ const generateMarkdown = ({title, description, installation, features, usage, gi
   - ${usage}
   
   
-### Contact
+## Contribution
+  
+  - ${contribution}
+  
+  
+## Tests
+  
+  - ${tests}
+  
+  
+## Questions
   
   - https://github.com/${github}
   

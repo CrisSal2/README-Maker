@@ -8,12 +8,18 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 
 /***************************************** Questions array for prompt **********************************/
 
+// contribution guidelines
+// test instructions
+
+
 const questions = [
     'What is the title of your project?',
     'Give a description of your project:',
     'How do you install your project?',
     'What are some of the features of your project?',
     'What are some of the usages of your project?',
+    'Contribution guidelines for your project:',
+    'Test instructions for your project:',
     'What email can people use to contact you?',
     'What is github username?',
     'Which license would you like to add to your project'
@@ -60,16 +66,26 @@ function init() {
         {
             type: 'input',
             message: questions[5],
-            name: 'email',
+            name: 'contribution',
         },
         {
             type: 'input',
             message: questions[6],
+            name: 'tests',
+        },
+        {
+            type: 'input',
+            message: questions[7],
+            name: 'email',
+        },
+        {
+            type: 'input',
+            message: questions[8],
             name: 'github',
         },
         {
             type: 'list',
-            message: questions[7],
+            message: questions[9],
             choices: [
                 'None',
                 'Apache license 2.0',
