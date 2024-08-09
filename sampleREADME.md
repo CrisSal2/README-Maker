@@ -1,8 +1,8 @@
-## Test 1
+## asdf
   
 ## Description
   
-  - desc of project
+  - asf
   
 ## Table of Contents
   
@@ -10,25 +10,25 @@
   - [Features](#features)
   - [Usage](#usage)
   - [Contact](#Contact)
-  - [License] - [License](#license)
+  - [License] ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
   
 ## Installation
   
-  - need nodeJS installed
+  - asdf
   
 ## Features
   
-  - license generation and user inputs prompt
+  - asdf
 
 
 ## Usage
   
-  - to create a readme file quickly and effectively
+  - asdf
   
   
 ### Contact
   
-  - https://github.com/crissal2
+  - https://github.com/sad
   
-  - cris@cris.com
+  - sadf
   

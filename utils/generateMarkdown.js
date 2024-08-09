@@ -50,12 +50,6 @@ function renderLicenseSection(license) {
   return licenseSection;
 };
 
-// TODO: Create a function to generate markdown for README
-/* function generateMarkdown(data) {
-  return `# ${data.title}
-
-`;
-}; */
 
 
 /************************************************* README File to be created using index.js prompt ****************************************/
@@ -74,7 +68,7 @@ const generateMarkdown = ({title, description, installation, features, usage, gi
   - [Features](#features)
   - [Usage](#usage)
   - [Contact](#Contact)
-  - [License] ${renderLicenseLink(license)}
+  - [License] ${renderLicenseBadge(license)}
   
 ## Installation
   
