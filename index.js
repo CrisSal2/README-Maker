@@ -3,10 +3,7 @@
 
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateREADME = require("./utils/generateREADME.js");
 const generateMarkdown = require("./utils/generateMarkdown.js");
-const { generate } = require("rxjs");
-const { log, error } = require("console");
 
 
 /***************************************** Questions array for prompt **********************************/
@@ -23,10 +20,16 @@ const questions = [
 ];
 
 
+function writeToFile (data) {
+    fs.writeFile('sampleREADME.md', data, (err) =>
+        err ? console.error(err) : console.log('README file has been successfully created.'))
+};
+
+
 /***************************************** User Input Function ****************************************/
 
 
-function writeToFile() {
+function init() {
     inquirer
         .prompt([
         {
@@ -87,17 +90,14 @@ function writeToFile() {
         },
         
     ])
-    .then(
-        (answers) => {
-        const readme = generateREADME.generate(answers);
-        fs.writeFile('README2.md', (readme), (err) => 
-            err ? console.error(err) : console.log('README file created!')
-        );
-    });
+    .then((response) => {
+        const data = generateMarkdown(response);
+        writeToFile(data);
+    })
 };
 
 
 /*************************************************** Initializes app ******************************************/
 
 
-writeToFile();
+init();

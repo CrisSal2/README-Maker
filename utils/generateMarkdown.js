@@ -1,7 +1,8 @@
 /*************************************************** Renders License Badge *******************************************************/
 
 
-function renderLicenseBadge(license) {let badge = "";
+function renderLicenseBadge(license) {
+  let badge = "";
   let licenseOptions =
   {
     "Apache license 2.0": "https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg",
@@ -23,10 +24,10 @@ function renderLicenseBadge(license) {let badge = "";
     badge = `![License](${licenseOptions[license]})`
   }
   return badge;
-}
+};
 
   
-/************************************************* If there is no license, returns an empty string **********************************/
+/************************************************* Function to render license **********************************/
 
 
 function renderLicenseLink(license) {
@@ -35,7 +36,7 @@ function renderLicenseLink(license) {
     licenseLink = "- [License](#license)"
   }
   return licenseLink;
-}
+};
 
 
 /************************************************ If there is no license, return an empty string ************************************/
@@ -47,13 +48,57 @@ function renderLicenseSection(license) {
     licenseSection = `## License\n${license}`;
   }
   return licenseSection;
-}
+};
 
-/* // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+// TODO: Create a function to generate markdown for README
+/* function generateMarkdown(data) {
   return `# ${data.title}
 
 `;
-} */
+}; */
 
-/* module.exports = generateMarkdown; */
+
+/************************************************* README File to be created using index.js prompt ****************************************/
+
+
+const generateMarkdown = ({title, description, installation, features, usage, github, email, license}) =>
+  `## ${title}
+  
+## Description
+  
+  - ${description}
+  
+## Table of Contents
+  
+  - [Installation](#installation)
+  - [Features](#features)
+  - [Usage](#usage)
+  - [Contact](#Contact)
+  - [License] ${renderLicenseLink(license)}
+  
+## Installation
+  
+  - ${installation}
+  
+## Features
+  
+  - ${features}
+
+
+## Usage
+  
+  - ${usage}
+  
+  
+### Contact
+  
+  - https://github.com/${github}
+  
+  - ${email}
+  
+`;
+
+
+
+
+module.exports = generateMarkdown;
