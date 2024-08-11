@@ -1,34 +1,52 @@
-## Test 1
+## README Maker
+
+  # License
+  ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
   
 ## Description
   
-  - desc of project
+  - Using NodeJS and Inquirer package, you can create a README file for your project!
+
+## Video Guide:
+
+ - https://www.youtube.com/watch?v=IQEtJEsoGcA
   
 ## Table of Contents
   
   - [Installation](#installation)
   - [Features](#features)
   - [Usage](#usage)
-  - [Contact](#Contact)
-  - [License] - [License](#license)
+  - [Contribution](#contribution)
+  - [Tests](#tests)
+  - [Questions](#questions)
   
 ## Installation
   
-  - need nodeJS installed
+  - You'll need NodeJS installed for this program, then you'll need to install the Inquirer package
   
 ## Features
   
-  - license generation and user inputs prompt
+  - This program prompts you for your project details to create your README
 
 
 ## Usage
   
-  - to create a readme file quickly and effectively
+  - Creates a README.md file for your project
   
   
-### Contact
+## Contribution
+  
+  - N/A
+  
+  
+## Tests
+  
+  - N/A
+  
+  
+## Questions
   
   - https://github.com/crissal2
   
-  - cris@cris.com
+  - salgado.chris.m@gmail.com
   
